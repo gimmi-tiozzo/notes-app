@@ -1,0 +1,35 @@
+{
+    "name": "note-ts",
+    "version": "1.0.0",
+    "description": "Progetto di test per la gestione delle note in NodeJs",
+    "main": "app.js",
+    "type": "module",
+    "scripts": {
+        "build": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gimmi-tiozzo/notes-app.git"
+    },
+    "keywords": [
+        "nodejs",
+        "typescript",
+        "notes"
+    ],
+    "author": "Gimmi Tiozzo",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/gimmi-tiozzo/notes-app/issues"
+    },
+    "homepage": "https://github.com/gimmi-tiozzo/notes-app#readme",
+    "dependencies": {
+        "@types/yargs": "^16.0.1",
+        "chalk": "^4.1.1",
+        "yargs": "^17.0.1"
+    },
+    "devDependencies": {
+        "@types/node": "^15.0.1",
+        "nodemon": "^2.0.7",
+        "typescript": "^4.2.4"
+    }
+}
