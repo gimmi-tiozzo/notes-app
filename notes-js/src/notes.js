@@ -1,6 +1,7 @@
 const fs = require("fs");
 const chalk = require("chalk");
-const fileName = "notes.json";
+const path = require("path");
+const fileName = path.join(__dirname, "../notes/notes.json");
 
 /**
  * Visualizza la lista delle note salvate nel file delle note

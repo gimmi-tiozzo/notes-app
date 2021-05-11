@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+    notes:
+        image: notes-js-img
+        build: .
+        container_name: notes-js
+        volumes:
+            - D:\courses\my\notes-app\notes-js\notes:/app/notes

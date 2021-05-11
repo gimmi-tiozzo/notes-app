@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+    notes:
+        image: notes-ts-img
+        build: .
+        container_name: notes-ts
+        volumes:
+            - D:\courses\my\notes-app\notes-typescript\notes:/app/notes

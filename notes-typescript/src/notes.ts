@@ -1,10 +1,16 @@
 import { writeFileSync, readFileSync, existsSync } from "fs";
 import chalk from "chalk";
+import path from "path";
+import { fileURLToPath } from "url";
+
+//se il file è caricato come modulo EcmaScript __dirname e __filename non sono disponibili. Sono variabili per i moduli CommonJs
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 /**
  * File in cui salvare le note in formato JSON
  */
-const fileName = "notes.json";
+const fileName = path.join(__dirname, "../notes/notes.json");
 
 /**
  * Nota
